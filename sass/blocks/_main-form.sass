@@ -1,0 +1,496 @@
+.main-form
+	font-family: Assistant
+	min-height: 708px
+
+	background: #F5F4F9
+
+	.container
+		max-width: 100vw
+		padding-left: 1.67vw
+		padding-right: 1.67vw
+		text-align: right
+	&-wrapper
+		padding-left: 15px
+		padding-right: 15px
+		padding-top: 24xp
+		padding-bottom: 104px
+	.form-group
+		margin-top: 40px
+	.form-control
+		background: #FFFFFF
+		border: 0.25px solid rgba(117, 121, 142, .25)
+		border-radius: 2px
+		&:focus
+			box-shadow: none
+			border: 0.25px solid rgba(117, 121, 142, 1)
+.dropdown-toggle::before
+	display: inline-block
+	margin-right: 0.55em
+	vertical-align: 0.255em
+	content: ""
+	background: url(../img/arrow-down.svg) left center no-repeat
+	background-size: 100%
+	width: 13px
+	height: 7.5px
+	padding-right: 10px
+.dropdown-toggle::after
+	display: none
+
+.btn
+	background: #ffffff
+	border-bottom: 0.25px solid rgba(117, 121, 142, .25)
+	border-top: 0.25px solid rgba(117, 121, 142, .25)
+	border-left: 0.25px solid rgba(117, 121, 142, .25)
+	border-top-right-radius: 0
+	border-bottom-right-radius: 0
+	border-top-left-radius: 2px
+	border-bottom-left-radius: 2px
+	align-items: center
+	display: flex
+	font-size: 24px
+	font-weight: 700
+	&:focus
+		box-shadow: none
+		border-bottom: 0.25px solid rgba(117, 121, 142, .9)
+		border-top: 0.25px solid rgba(117, 121, 142, .9)
+		border-left: 0.25px solid rgba(117, 121, 142, .9)
+		border-right: 0.25px solid rgba(117, 121, 142, .9)
+	&-round
+		display: inline-block
+		width: 41px
+		height: 41px
+		border-radius: 50%
+		border: 1px solid #DB2B6F
+
+		background: url(../img/+.svg) center center no-repeat
+		&:hover
+			background: url(../img/+white.svg) center center no-repeat,linear-gradient(223.11deg, #E15D29 0%, #DB2B6F 96.91%)
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+		&-label
+			font-weight: 400
+			font-size: 12px
+			line-height: 16px
+			text-align: right
+			color: #DB2B6F
+			position: absolute
+			right: 50px
+			top: 12px
+	&-group
+		margin-top: 16px
+		position: relative
+		vertical-align: middle
+		display: block
+.down
+	.btn
+		background: #ffffff
+		border-bottom: 0.25px solid rgba(117, 121, 142, .25)
+		border-top: 0.25px solid rgba(117, 121, 142, .25)
+		border-left: 0.25px solid rgba(117, 121, 142, .25)
+		border-top-right-radius: 0
+		border-bottom-right-radius: 0
+		border-top-left-radius: 2px
+		border-bottom-left-radius: 2px
+		align-items: center
+		display: flex
+		font-size: 12px
+		font-weight: 700
+		padding-top: 12px
+		padding-bottom: 12px
+.form
+	&-title
+		font-weight: 700
+		font-size: 24px
+		text-align: right
+		text-transform: uppercase
+		color: #2A3043
+		margin-top: 16px
+		margin-bottom: 22px
+
+	.menu_toggle
+		position: relative
+	.hamburger
+		position: absolute
+		height: 100%
+		width: 100%
+		display: block
+.hamburger-cross,.hamburger
+	span
+		background: #23b1fe
+.menu_toggle .hamburger span
+	width: 0
+	height: 2px
+	position: relative
+	top: 0
+	left: 0
+	margin: 4px 0
+	display: block
+
+	border-radius: 3px
+	-webkit-transition: .2s ease-in-out
+	-o-transition: .2s ease-in-out
+	transition: .2s ease-in-out
+
+.main
+	background: #F5F4F9
+	&-top-wrapper
+		display: flex
+		flex-direction: column
+		padding-top: 24px
+		padding-right: 24px
+
+	&-title
+		display: flex
+		margin-left: auto
+		font-weight: 700
+		font-size: 24px
+		line-height: 31px
+		text-align: right
+		letter-spacing: 1.14286px
+		text-transform: uppercase
+		color: #2A3043
+		margin-bottom: 10px
+
+	&-button
+		display: flex
+		margin-left: auto
+		background: url(../img/btn_bg.png) left center no-repeat, linear-gradient(223.11deg, #E15D29 0%, #DB2B6F 96.91%)
+		background-size: 32%,100%
+		color: #ffffff
+		font-weight: 700
+		font-size: 14px
+		line-height: 18px
+		padding: 13px 13px 13px 55px
+		border-radius: 30px
+		font-family: Assistant
+		margin-bottom: 24px
+		b
+			font-size: 21px
+		&:hover
+			color: #495057
+			background: url(../img/btn_bg_hover.png) left center no-repeat, linear-gradient(223.11deg, #E15D29 0%, #DB2B6F 96.91%)
+	&-subtitle-links
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+
+		li
+			background: url(../img/sort_up.svg) left center no-repeat
+			font-weight: 400
+			font-size: 10px
+			line-height: 13px
+			text-align: right
+			color: #000000
+			padding-left: 10px
+			b
+				color: #75798E
+				font-weight: 400!important
+			&:first-child
+				background: url(../img/arrow.svg) left center no-repeat
+		.link-active
+			font-weight: 700
+			background: url(../img/sort_down.svg) left center no-repeat
+	&-content-wrapper
+		padding: 9px 13px 40px 13px
+		background: #ffffff
+	&-card
+		padding-top: 18px
+		padding-bottom: 11px
+		border-bottom: 0.5px solid #75798E
+	&-sticker
+		background-color: #723A83
+		padding: 1px 4px 1px 4px
+		border-radius: 2px
+		font-weight: 400
+		font-size: 12px
+		color: #FFFFFF
+		&__pink
+			background-color: #DB2B6F
+	&-card-title
+		font-weight: 400
+		font-size: 12px
+		color: #000000
+		text-align: right
+	&-card-group
+		justify-content: flex-end
+		margin-top: 6px
+		margin-bottom: 6px
+
+	&-card-subtitle
+		font-weight: 400
+		font-size: 10px
+		text-align: right
+		color: #000000
+		padding-right: 14px
+		&__flag
+			background: url(../img/flag.svg) right center no-repeat
+		&__triangle
+			background: url(../img/triangle.svg) right center no-repeat
+	&-card-text
+
+		font-weight: 400
+		font-size: 10px
+		text-align: right
+		color: #000000
+
+		&__percent
+			display: flex
+			justify-content: space-between
+
+		&__ellipse
+			padding-right: 14px
+			background: url(../img/ellipse.svg) right center no-repeat
+	&-percent-box
+		display: flex
+
+		font-size: 10px
+		text-align: center
+		border-radius: 2px
+		padding: 0px 4px
+
+		&__orange
+			color: #FF3F00
+			border: 1px solid#FF3F00
+
+		&__green
+			color: #60A910
+			border: 1px solid#60A910
+.copipast
+	padding-top: 11px
+	font-weight: 300
+	font-size: 12px
+
+	text-align: center
+
+	color: #000000
+	&-after
+		font-weight: 300
+		font-size: 12px
+
+		text-align: center
+		color: #000000
+		padding-bottom: 16px
+		b
+			color: #009FCF
+
+.navigation
+	padding-top: 15px
+	padding-left: 4px
+	padding-right: 4px
+	display: flex
+	justify-content: space-between
+	align-items: center
+.back-arrow
+	padding-left: 20px
+.breadcrumbs
+	display: flex
+	justify-content: flex-end
+
+	&__item
+
+		font-size: 10px
+		font-weight: 400
+
+	&__link
+		text-decoration: none
+		color: #000000
+		padding-left: 8px
+		padding-right: 8px
+
+.flag-input
+	margin-top: 40px
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		overflow: auto
+
+	ul li
+		display: flex
+		justify-content: flex-end
+		color: #4B4B4B
+
+		position: relative
+		float: left
+		width: 100%
+
+	ul li input[type=radio]
+		position: absolute
+		visibility: hidden
+
+	ul li label
+		display: block
+		position: relative
+		font-weight: 400
+		font-size: 12px
+		padding: 0px 50px 25px 60px
+		margin: 0px 0
+		height: 30px
+		z-index: 6
+		color: #000000
+		cursor: pointer
+		-webkit-transition: all 0.25s linear
+		background: url(../img/flag_input.svg) 90% 10% no-repeat
+
+	ul li .check
+		display: block
+		position: absolute
+		border: 1px solid #2A3043
+		border-radius: 100%
+		height: 12px
+		width: 12px
+		top: 3px
+		right: 0px
+		z-index: 5
+		transition: border .25s linear
+		-webkit-transition: border .25s linear
+
+	ul li .check::before
+		display: block
+		position: absolute
+		content: ''
+		border-radius: 100%
+		height: 5.5px
+		width: 5.5px
+		top: 2px
+		left: 2.5px
+		margin: auto
+		transition: background 0.25s linear
+		-webkit-transition: background 0.25s linear
+
+	input[type=radio]:checked ~ .check
+		border: 1px solid #DB2B6F
+
+	input[type=radio]:checked ~ .check::before
+		background: #DB2B6F
+
+	input[type=radio]:checked ~ label
+		color: #DB2B6F
+
+input::-webkit-calendar-picker-indicator
+	opacity: 0
+
+.date
+	input
+		display: flex
+		flex-direction: row-reverse
+		position: relative
+		padding-left: 20px
+
+	input:before
+		background: url(../img/calend.svg) center no-repeat
+		content: " "
+		padding: 10px
+		display: inline-block
+		font: normal normal normal 14px/1 FontAwesome
+		font-size: inherit
+		text-rendering: auto
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		position: absolute
+		left: 13px
+		top: 50%
+		transform: translateY(-50%)
+.date__unactive
+	input:before
+		background: url(../img/calend_not_hover.svg) center no-repeat
+.input-radio-title
+	font-size: 12px
+	font-weight: 400
+	margin-top: 40px
+
+.input-radio
+	margin-top: 26px
+	ul
+		display: flex
+		list-style: none
+		margin: 0
+		padding: 0
+		overflow: auto
+
+	ul li
+		display: flex
+		flex-direction: column
+		align-items: center
+		color: #4B4B4B
+
+		position: relative
+		float: left
+		width: 100%
+
+	ul li input[type=radio]
+		position: absolute
+		visibility: hidden
+
+	ul li label
+		display: block
+		position: relative
+		font-weight: 400
+		font-size: 12px
+		padding: 12px 0px 0px 0px
+		margin: 0px 0
+		height: 30px
+		z-index: 6
+		color: #000000
+		cursor: pointer
+		-webkit-transition: all 0.25s linear
+
+	ul li .check
+		display: block
+		position: absolute
+		border: 1px solid #2A3043
+		border-radius: 100%
+		height: 12px
+		width: 12px
+
+		z-index: 5
+		transition: border .25s linear
+		-webkit-transition: border .25s linear
+
+	ul li .check::before
+		display: block
+		position: absolute
+		content: ''
+		border-radius: 100%
+		height: 5.5px
+		width: 5.5px
+		top: 2px
+		left: 2.5px
+		margin: auto
+		transition: background 0.25s linear
+		-webkit-transition: background 0.25s linear
+
+	input[type=radio]:checked ~ .check
+		border: 1px solid #DB2B6F
+
+	input[type=radio]:checked ~ .check::before
+		background: #DB2B6F
+
+	input[type=radio]:checked ~ label
+		color: #DB2B6F
+
+input::-webkit-calendar-picker-indicator
+	opacity: 0
+
+.btn-down
+	display: flex
+	margin-left: auto
+	margin-right: auto
+	background: linear-gradient(271.54deg, #FF3F00 -0.49%, #E8218C 65.93%)
+	box-shadow: 0px 1px 5px rgb (0 0 0 / 5%)
+	border-radius: 4px
+	padding-top: 14px
+	padding-bottom: 9px
+	padding-left: 38.94vw
+	padding-right: 38.94vw
+	margin-top: 40px
+	margin-bottom: 104px
+	font-size: 20px
+	font-weight: 400
+	color: #ffffff
+	text-align: center
+	text-decoration: none
+	vertical-align: middle
+	cursor: pointer
+	user-select: none
+	border: none
